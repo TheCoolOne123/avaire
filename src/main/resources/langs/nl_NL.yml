@@ -54,7 +54,7 @@ modlog-types:
     name: "Tijdelijke demp"
     action: "Tijdelijke dempen"
   unmute:
-    name: "Ontdemp"
+    name: "Ontdempen"
     action: "Ontdempen"
 administration:
   common:
@@ -199,7 +199,7 @@ administration:
     invalidNumberGiven: "Ongeldige modifier gegeven, de modifier moet een positief percentage hebben tussen de `0.01%` en `500%`"
     resetToDefault: "De level modifier is terug gezet naar de standaard **:modifier** modifier."
     changedTo: "De level and experienceis veranderd naar **:modifier**"
-    requiredIsNow: "\n\n**Required XP to reach some levels is now:**\n"
+    requiredIsNow: "\n\n**Vereist XP om sommige levels te bereiken is nu:**\n"
     statusMessage: "De server gebruikt momenteel een **:modifier** modifier voor levels and experience.\n\n**Benodigde EXP om sommige levels te berijken**\n"
     level: "Level {0}"
   ListAliasesCommand:
@@ -299,11 +299,11 @@ administration:
   RemoveSelfAssignableRoleCommand:
     message: "De **:role** rol is verwijderd van de zelf toegeven lijst.\nDe server heeft nog `:slots` plekken voor zelf toe te geven rollen."
   RoleLevelCommand:
-    invalidRole: "Invalid role given, I found no role on the server called `{0}`"
-    noRolesWithRewardsDisabled: "There are currently no roles with the level rewards disabled, you can add one by using the `{0} <role>` command."
-    listRoles: "All the roles mentioned below currently have their level rewards turned off, this means that any user with one of those roles won't earn any XP in any channel they talk in, any role not on this list is unaffected.\n\n:roles"
-    listRolesTitle: "Roles with their Level Rewards disabled ({0})"
-    success: "The XP rewards for the :role role has been **:status**!"
+    invalidRole: "Ongeldige rol gegeven, ik heb geen rol gevonden op de server genaamd `{0}`"
+    noRolesWithRewardsDisabled: "Er zijn op dit moment geen rollen met de level beloningen uitgeschakeld, je kan er een toevoegen met het `{0} <role>` commando."
+    listRoles: "Alle onderstaande rollen hebben hun level beloningen uitgeschakeld, dit betekent dat een gebruiker met een van deze rollen geen XP verdient in elk kanaal waar hij of zij in spreekt elke rol die niet op deze lijst staat, wordt niet beïnvloed.\n\n:roles"
+    listRolesTitle: "Rollen met Level Beloningen uitgeschakeld ({0})"
+    success: "De XP beloningen voor de :role rol is **:status**!"
     status:
       enabled: "Geactiveerd"
       disabled: "Gedeactiveerd"
@@ -415,11 +415,11 @@ fun:
       - 'Ziet er niet goed uit'
       - 'Onwaarschijnlijk'
   HolidayCommand:
-    tooManyAttempts: "The Holiday API was hit too many times which shouldn't have been possible. D:"
-    notFound: "The Holiday API command could not retrieve any data for this request."
-    somethingWentWrong: "Something went wrong. Perhaps contact a bot administrator for help."
-    noHolidaysToday: "No holidays today...Get back to work!"
-    todayHoliday: "Today is {0}"
+    tooManyAttempts: "De Feestdagen API is te vaak geraakt wat niet mogelijk had moeten zijn. D:"
+    notFound: "Het Holiday API-commando kon geen gegevens ophalen voor dit verzoek."
+    somethingWentWrong: "Er is iets fout gegaan. Neem contact op met een bot beheerder voor hulp."
+    noHolidaysToday: "Geen vakantiedagen vandaag... Ga terug naar je werk!"
+    todayHoliday: "Het is vandaag {0}"
   MemeCommand:
     missingArgument: 'Er mist de `action` argument, je moet het type meme meegeven voor het type meme dat je wilt genereren, of `list` om alle meme types te laten zien.'
     invalidType: 'Ongeldig meme type gegeven, `{0}` is geen geldig meme type!'
@@ -473,21 +473,21 @@ interaction:
   CuddleCommand: '**{0}** knuffels **{1}**'
   DivorceCommand: '**{0}** scheid met **{1}**'
   EatCommand: '**{0}** is aan het eten met **{1}**'
-  HandHoldCommand: '**{0}** holds hands with **{1}**'
+  HandHoldCommand: '**{0}** houdt handen vast met **{1}**'
   HelloCommand: '**{0}** zegt hallo tegen **{1}**'
   HighFiveCommand: '**{0}** high fives **{1}**'
   HugCommand: '**{0}** knuffeld **{1}**'
   KillCommand: '**{0}** wil **{1}** vermoorden'
   KissCommand: '**{0}** kusjes **{1}**'
-  LaughCommand: '**{0}** laughs at **{1}**'
+  LaughCommand: '**{0}** lacht om **{1}**'
   MarryCommand: '**{0}** wil trouwen met **{1}**'
   MeowCommand: '**{0}** meows naar **{1}**'
   PanCommand: '**{0}** heeft zojuist **{1}** geslagen met een pan!'
-  PatCommand: '**{0}** pats **{1}**'
+  PatCommand: '**{0}** aait **{1}**'
   PokeCommand: '**{0}** prikt **{1}**'
-  PoutCommand: '**{0}** pouts at **{1}**'
+  PoutCommand: '**{0}** trekt een pruillip naar **{1}**'
   PunchCommand: '**{0}** stompt **{1}**'
-  SenpaiCommand: '**{0}** wants to be noticed by **{1}**'
+  SenpaiCommand: '**{0}** wil opgemerkt worden door **{1}**'
   ShrugCommand: '**{0}** trekt schouders op naar **{1}**'
   SlapCommand: '**{0}** slaat **{1}**'
   TickleCommand: '**{0}** kieteld **{1}**'
@@ -693,7 +693,7 @@ utility:
       true: 'Waar'
       false: 'Nietwaar'
     eastereggs:
-      quickMaths: '	-	Quick maths!'
+      quickMaths: '	-	Snelle Wiskunde!'
       binary: "Er zijn maar 10 soorten mensen in de wereld, de mensen die binair kennen en de mensen die geen binair kennen."
   ChangelogCommand:
     invalidChangelogChannel: "Het opgegeven veranderingslogboek kanaal is invalide, het tekst kanaal kon niet worden gevonden!"
@@ -711,7 +711,7 @@ utility:
       position: 'Positie'
       users: 'Gebruikers'
       category: 'Categorieën'
-      bitRate: 'Bit Rate'
+      bitRate: 'Bit snelheid'
       nsfw: 'NSFW'
       createdAt: 'Aangemaakt op'
     noTopic: '*Er bestaad geen onderwerp voor dit kanaal*'
@@ -744,7 +744,7 @@ utility:
   LeaderboardCommand:
     noData: 'Er is geen leaderboard data op het momemnt, probeer later opnieuw.'
     line: '`:num` **:username** is level **:level** met **:experience** xp.'
-    title: '{0} Leaderboard'
+    title: '{0} Ranglijst'
     yourRank: 'Jouw rank'
   PingCommand:
     message: 'Pong! duurde :ping ms (:rating) Websocket heartbeat :heartbeat ms'
@@ -753,7 +753,7 @@ utility:
       100: 'geweldig! :smiley:'
       200: 'netjes! :slight_smile:'
       300: 'fatsoenlijk. :neutral_face:'
-      400: 'average... :confused:'
+      400: 'gemiddeld... :confused:'
       500: 'beetje sloom. :slight_frown:'
       600: 'best sloom.. :frowning2:'
       700: 'sloom.. :worried:'
@@ -784,9 +784,9 @@ utility:
     botsCannotReceiveXp: "Bots kunnen geen exp ontvangen en kunnen dus geen ranking hebben, probeer het opnieuw met een gebruiker."
     unranked: 'Unranked'
     fields:
-      rank: 'Rank'
+      rank: 'Rang'
       level: 'Level'
-      total: '{0} (Total: {1})'
+      total: '{0} (Totaal: {1})'
       experience: 'Experience'
       experienceToNext: 'Experience nodig voor het volgende level'
       youNeedMoreXpToLevelUp: "[{0}] {1}{2}\n\\t\\t\\t\\t\\t\\t\\t\\t\\tJe bent nog {3} meer xp nodig om een level omhoog je gaan."
@@ -804,7 +804,7 @@ utility:
       voiceChannels: 'Spraak kanalen'
       members: 'Leden'
       users: 'Gebruikers'
-      bots: 'Bots'
+      bots: 'Robots'
       roles: 'Rollen'
       region: 'Regio'
       createdAt: 'Gemaakt op'
@@ -822,8 +822,8 @@ utility:
     title: 'Officiale Bot Server Uitnodiging'
     footer: 'Op dit moment aan het spelen in {0} servers met {1} nummers in de wachtrij.'
     formats:
-      perMinute: '{0} ({1} per min)'
-      perSecond: '{0} ({1} per sec)'
+      perMinute: '{0} ({1} per minuut)'
+      perSecond: '{0} ({1} per seconde)'
       memory: '{0}Mb / {1}Mb'
     fields:
       author: 'Auteur'
@@ -839,9 +839,9 @@ utility:
       channels: 'Kanalen'
       servers: 'Servers'
   TemperatureConvertCommand:
-    invalidConvertFormat: "`{0}` is not a recognized conversion mode. Valid conversion modes are:\n{1}"
-    invalidNumberFormat: "`{0}` could not be parsed as a number."
-    message: ":input is equal to :one and :two"
+    invalidConvertFormat: "`{0}` is geen herkende conversiemodus. Geldige conversie modes zijn:\n{1}"
+    invalidNumberFormat: "`{0}` kon niet worden verwerkt als nummer."
+    message: ":input is gelijk aan :one en :two"
   UptimeCommand:
     message: 'Ik ben online geweest voor :time'
     footer: 'Begonen {0} op {1}'
@@ -849,7 +849,7 @@ utility:
     timeFormat: 'HH:mm:ss z'
   UserAvatarCommand:
     noUserFound: "Ik heb geen gebruikers gevonden met de naam of ID van `{0}`"
-    title: "{0}#{1}'s Avatar"
+    title: "{0}#{1} zijn Avatar"
   UserIdCommand:
     message: ':id: van de gebruiker **:target** is `:targetid`'
   UserInfoCommand:
@@ -860,7 +860,7 @@ utility:
       joinedDiscord: 'Discord Gejoined'
       roles: 'Rollen ({0})'
       servers: 'Servers'
-    inServers: '{0} the bot knows about'
+    inServers: '{0} die de bot kent'
     noRoles: '*Deze gebruiker is in geen enkele rol*'
     timeFormat: 'EEE, dd MMM yyyy HH:mm'
   VersionCommand:
@@ -870,9 +870,9 @@ utility:
     latestVersion: 'De laatste versie voor AvaIre is v{0}'
     latestChanges: 'Laatste veranderingen:'
     versions:
-      majorName: 'Major'
+      majorName: 'Belangrijkste'
       major: 'Major versie updates zijn grote veranderingen voor de bot of een heleboel minor veranderingen, het is zwaar aangeraden dat je update, omdat patches en minor versie updates niet meer ondersteund worden.'
-      minorName: 'Minor'
+      minorName: 'Klein'
       minor: 'Minor versie verschillen zijn kleine toevoegingen, features en veranderingen aan de huidige code, het is aangeraden om up to date te blijven met de nieuwste minor versie updates zodat je altijd toegang hebt tot de niewste features.'
       patchName: 'Patch'
       patch: 'Patch versie updates zijn bug fixes, herschrijven van stukjes code of andere aanpassingen die de bot verder niet aanpassen kwa gebruik, het is aangeraden dat je op patch versie veranderingen update zodat je altijd die nieuwste bugfixes hebt.'
