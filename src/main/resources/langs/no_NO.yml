@@ -1,4 +1,3 @@
----
 errors:
   missingArgument: 'Manglende argument, `{0}` argument er påkrevd!'
   invalidProperty: 'Ugyldig `{0}` brukt, du må benytte en gyldig {1}.'
